@@ -1,6 +1,6 @@
 ---
 name: novel-orchestrator
-description: Chinese web-novel creation and diagnosis orchestrator for premises, setting bibles, openings, reader promise, expectation chains, unit structure, long-arc continuity, manual case evidence, full-book detailed deconstruction, fine-grained taxonomy breakdowns, and evidence-backed 拆书. Use when the user asks to analyze or improve 网文 ideas, settings, chapters, outlines, genre fit, hooks, 爽点/期待感, 起承转合, 新人训练, 拆书取证, 完整拆一本书, 设定/大纲/角色精拆, or consult the completed local 网文创作分析编排系统 snapshot.
+description: Chinese web-novel, light-novel, and manga creation and diagnosis orchestrator for premises, setting bibles, openings, reader promise, expectation chains, unit structure, long-arc continuity, manual case evidence, full-book detailed deconstruction, fine-grained taxonomy breakdowns, and evidence-backed 拆书. Use when the user asks to analyze or improve 网文 ideas, 轻小说, 漫画, settings, chapters, outlines, genre fit, hooks, 爽点/期待感, 起承转合, 新人训练, 拆书取证, 完整拆一本书, 设定/大纲/角色精拆, or consult the completed local 网文创作分析编排系统 snapshot.
 ---
 
 # Novel Orchestrator
@@ -34,6 +34,7 @@ Use this skill as a completed snapshot of `网文创作分析编排系统`.
 - Preserve the user's core idea unless asked to reinvent it.
 - For web novels, always check reader promise, opening hook, expectation chain, payoff, and next expectation.
 - For full-book 拆书, create one independent top-level folder per major category, including `16-卷级精拆/` for all `vol-xx` files and `99-总报告/` for the final report. For characters, create subfolders for main characters, important supporting characters, antagonists, and function characters, then write one detailed md per character covering profile, appearance, personality/psychology, growth/change, plot function, relationships, performance evidence, and craft analysis. Apply the same item-level split to settings, forces, events, foreshadowing, expectations, scenes, and transfer templates; summary tables are indexes, not substitutes for detailed files.
+- For light novels, additionally analyze voice, dialogue density, character attributes, daily-life/mainline balance, illustration beats, and volume hooks. For manga, additionally analyze panel flow, page-turn hooks, panel density, visual hooks, character design, expression acting, action lines, speech balloons, stillness/blank space, and climax pages.
 - Format generated markdown for scanning: use heading hierarchy plus `字段 / 内容` tables for fill-in fields; keep summary ledgers as normal markdown tables.
 
 ## Reference Map

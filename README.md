@@ -4,7 +4,7 @@ Codex skill for Chinese web-novel creation, diagnosis, setting-bible analysis, f
 
 ## What It Does
 
-- Diagnose premises, openings, setting libraries, outlines, and chapters.
+- Diagnose premises, openings, setting libraries, outlines, chapters, light novels, and manga.
 - Route work through reader promise, hooks, expectation chains, 起承转合, and long-arc continuity.
 - Use completed manual case evidence through `batch-169`, cases `001-845`.
 - Consult 845 completed subgenre/structure modules.

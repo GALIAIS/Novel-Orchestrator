@@ -45,6 +45,8 @@ def main() -> None:
             "16-卷级精拆/vol-01-卷级精拆.md",
             "16-卷级精拆/vol-02-卷级精拆.md",
             "17-原文切块/chapter-001.txt",
+            "18-媒介专项/01-轻小说拆解/01-轻小说拆解.md",
+            "18-媒介专项/02-漫画拆解/01-漫画拆解.md",
             "99-总报告/99-总报告.md",
         ]
         for rel in expected:
@@ -55,6 +57,8 @@ def main() -> None:
         setting_text = (out / "04-世界观设定/01-基础规则/规则-001-待命名.md").read_text(encoding="utf-8")
         for marker in ("| 例外条件 |", "| 违反后果 |", "| 可迁移风险 |"):
             assert marker in setting_text, marker
+        manga_text = (out / "18-媒介专项/02-漫画拆解/01-漫画拆解.md").read_text(encoding="utf-8")
+        assert "| 分镜节奏 |" in manga_text
         volume_text = (out / "16-卷级精拆/vol-01-卷级精拆.md").read_text(encoding="utf-8")
         assert "| 卷级承诺 |" in volume_text
         assert not [path for path in out.iterdir() if path.is_file()]
