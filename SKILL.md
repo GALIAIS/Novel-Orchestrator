@@ -1,18 +1,18 @@
 ---
 name: novel-orchestrator
-description: Chinese web-novel, light-novel, and manga creation and diagnosis orchestrator for premises, setting bibles, openings, reader promise, expectation chains, unit structure, long-arc continuity, manual case evidence, full-book detailed deconstruction, fine-grained taxonomy breakdowns, and evidence-backed 拆书. Use when the user asks to analyze or improve 网文 ideas, 轻小说, 漫画, settings, chapters, outlines, genre fit, hooks, 爽点/期待感, 起承转合, 新人训练, 拆书取证, 完整拆一本书, 设定/大纲/角色精拆, or consult the completed local 网文创作分析编排系统 snapshot.
+description: Creation and analysis orchestrator for serial fiction, light novels, and manga, covering premises, setting bibles, openings, reader promise, expectation chains, unit structure, long-arc continuity, manual case evidence, full-book detailed deconstruction, fine-grained taxonomy breakdowns, and evidence-backed 拆书. Use when the user asks to analyze or improve ideas, settings, chapters, outlines, genre fit, hooks, 爽点/期待感, 起承转合, 新人训练, 拆书取证, 完整拆一本书, 设定/大纲/角色精拆, or consult the completed local creation-analysis system snapshot.
 ---
 
-# Novel Orchestrator
+# 创作编排器
 
 Use this skill as a completed snapshot of `网文创作分析编排系统`.
 
 ## Boundary
 
 - Include only completed material copied into `references/`.
-- Treat manual high-weight cases as complete only through `batch-169`, cases `001-845`.
-- Treat subgenre modules as complete only for the 845 modules indexed in `references/subgenre-modules/README.md`.
-- Do not claim `batch-170` or later exists in this skill. If the user asks to continue corpus整理, work in the source workspace, not inside this skill snapshot.
+- Treat manual high-weight cases as complete only through `batch-418`, cases `0001-2090`.
+- Treat subgenre modules as complete only for the 2090 modules indexed in `references/subgenre-modules/README.md`.
+- Do not claim `batch-419` or later exists in this skill. If the user asks to continue corpus整理, work in the source workspace, not inside this skill snapshot.
 - Do not load raw corpus indexes, scripts, tools, or evidence images from this skill; they were deliberately excluded.
 
 ## Route
@@ -21,8 +21,8 @@ Use this skill as a completed snapshot of `网文创作分析编排系统`.
 2. Use `references/orchestrator/01-router-matrix.md` to choose one main module.
 3. Read only the matching file in `references/modules/`.
 4. If genre fit matters, read the relevant file in `references/genre-modules/`.
-5. If a reusable subtype is needed, search `references/subgenre-modules/README.md`, then read only the matching module file.
-6. If evidence from completed manual cases is needed, search `references/case-library/精拆/manual-ledger-completed.md`, then read the cited `batch-xxx.md`.
+5. If a reusable subtype is needed, use `rg -n "关键词1|关键词2|同义词" references/subgenre-modules/README.md` instead of loading the 2090-entry index in full; read only the 1-3 best-matching module files.
+6. If evidence from completed manual cases is needed, use `rg -n "关键词1|关键词2|标题词" references/case-library/精拆/manual-ledger-completed.md`, then read only the cited `batch-xxx.md` and relevant case section.
 7. Use `references/templates/` only when the user asks for a reusable card/report format.
 8. For local full-book txt/md deconstruction, run `scripts/scaffold_full_book_deconstruction.py <book-file>` first, then fill the generated files.
 
@@ -30,6 +30,7 @@ Use this skill as a completed snapshot of `网文创作分析编排系统`.
 
 - Return a concrete creation, diagnosis, revision, training, or evidence-backed拆书 deliverable first.
 - Separate confirmed evidence, interpretation, and invention.
+- Treat case conclusions as bounded writing evidence, not external verification of platform data, income, market trends, or reader universals.
 - Prefer one routed module over mixing every framework.
 - Preserve the user's core idea unless asked to reinvent it.
 - For web novels, always check reader promise, opening hook, expectation chain, payoff, and next expectation.
@@ -42,8 +43,8 @@ Use this skill as a completed snapshot of `网文创作分析编排系统`.
 - `references/orchestrator/`: total entry, routing, core concepts, workflows, checklists, source index.
 - `references/modules/`: task modules for reader promise, opening hooks, expectation/emotion,起承转合, long-arc continuity,拆书取证.
 - `references/genre-modules/`: eight major genre modules.
-- `references/subgenre-modules/`: 845 completed subtype/structure modules.
-- `references/case-library/精拆/`: 169 completed manual batches, 845 cases.
+- `references/subgenre-modules/`: 2090 completed subtype/structure modules.
+- `references/case-library/精拆/`: 418 completed manual batches, 2090 cases.
 - `references/curriculum/`: newcomer training path, training task bank, acceptance criteria.
 - `references/templates/`: creation card and diagnosis report templates.
 - `scripts/scaffold_full_book_deconstruction.py`: create the nested full-book 拆书 folder tree, including chapter index, coverage ledger, category folders, per-character/item templates, volume folder, and report folder.

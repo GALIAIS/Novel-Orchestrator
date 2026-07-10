@@ -1,4 +1,4 @@
-# Novel Orchestrator
+# 创作编排器
 
 Codex skill for Chinese web-novel creation, diagnosis, setting-bible analysis, full-book detailed deconstruction, and evidence-backed 拆书.
 
@@ -6,8 +6,8 @@ Codex skill for Chinese web-novel creation, diagnosis, setting-bible analysis, f
 
 - Diagnose premises, openings, setting libraries, outlines, chapters, light novels, and manga.
 - Route work through reader promise, hooks, expectation chains, 起承转合, and long-arc continuity.
-- Use completed manual case evidence through `batch-169`, cases `001-845`.
-- Consult 845 completed subgenre/structure modules.
+- Use completed manual case evidence through `batch-418`, cases `0001-2090`.
+- Consult 2090 completed subgenre/structure modules.
 - Produce concrete revision plans, training tasks, diagnosis reports, full-book 拆书 folders, or 拆书 outputs.
 
 ## Use
@@ -33,12 +33,12 @@ Typical requests:
 - `references/orchestrator/`: total entry, routing matrix, concepts, workflows, checklists.
 - `references/modules/`: reader promise, opening hooks, expectation/emotion, 起承转合, long-arc continuity, 拆书取证.
 - `references/genre-modules/`: eight major genre modules.
-- `references/subgenre-modules/`: 845 completed subtype/structure modules.
-- `references/case-library/精拆/`: 169 manual拆书 batches, 845 cases.
+- `references/subgenre-modules/`: 2090 completed subtype/structure modules.
+- `references/case-library/精拆/`: 418 manual拆书 batches, 2090 cases.
 - `references/curriculum/`: newcomer training path and acceptance criteria.
 - `references/templates/`: reusable creation and diagnosis templates.
 - `scripts/scaffold_full_book_deconstruction.py`: scaffold a fully nested full-book 拆书 tree with chapter index, coverage ledger, category folders, per-character/item templates, `16-卷级精拆/`, and `99-总报告/`.
 
 ## Boundary
 
-This repository intentionally excludes unfinished `batch-170+`, raw corpus indexes, source-workbench tooling, and evidence images. The skill is a completed snapshot, not the active corpus workbench.
+This repository intentionally excludes unfinished `batch-419+`, next-batch candidates, raw corpus indexes, source-workbench tooling, and evidence images. The skill is a completed snapshot, not the active corpus workbench.

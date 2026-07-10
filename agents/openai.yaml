@@ -1,4 +1,4 @@
 interface:
   display_name: "创作编排器"
-  short_description: "面向开篇、结构、角色、设定、商业包装、轻小说、漫画与全书精拆的编排系统"
-  default_prompt: "Use $novel-orchestrator to diagnose this web-novel/light-novel/manga setting bible/opening or perform full-book deconstruction across nested category folders, per-character md files, volume files, expectation chains, foreshadowing, craft, packaging, medium-specific analysis, and transfer training."
+  short_description: "融合2090例人工案例，编排开篇、结构、角色、设定、轻小说、漫画与全书精拆"
+  default_prompt: "Use $novel-orchestrator to diagnose this serial-fiction, light-novel, or manga setting bible/opening, retrieve only relevant evidence from the 2090-case completed snapshot, or perform full-book deconstruction across nested category folders, per-character md files, volume files, expectation chains, foreshadowing, craft, packaging, medium-specific analysis, and transfer training."
